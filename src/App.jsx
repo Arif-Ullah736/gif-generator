@@ -1,13 +1,18 @@
 import "./App.css";
-import Cards from "./components/Cards";
-import reviews from "./data.js";
+import Random from "./components/Random";
+import Tag from "./components/Tag";
 function App() {
   return (
     <div className="App">
-      <h1>Our Testimonials</h1>
-      <div className="border-line"></div>
-
-      <Cards reviews={reviews} />
+      <div className="header">
+        <h3>Gif Generater</h3>
+      </div>
+      <div>
+        <Random />
+      </div>
+      <div>
+        <Tag />
+      </div>
     </div>
   );
 }
